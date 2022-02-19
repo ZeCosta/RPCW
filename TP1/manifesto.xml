@@ -16,6 +16,9 @@
         <css>
             <nome>w3.css</home>
         </css>
+        <javascript>
+            <nome>sliderScript.js</home>
+        </javascript>
         <imagem>
             <nome>images/Flag_of_Japan.svg</home>
             <nome>images/cidade_e_montanha.jpg</home>
