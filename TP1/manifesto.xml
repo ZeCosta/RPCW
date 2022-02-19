@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifesto>
+    <metadata>
+        <titulo>TPC1 - Japan Apreciation Website</titulo>
+        <data>21 de fevereiro de 2022</data>
+        <autor>José Pedro Carvalho Costa</autor>
+        <uc>Representação e Processamento de Conhecimento na Web</uc>
+    </metadata>
+    <resumo>
+    	Este website é constituido por uma página HTML, embelezado pelo CSS do W3School e algum CSS feito por mim, assim como algum JavaScript para dinamizar a página, criando um slider bastante primitivo.
+    </resumo>
+    <resultados>
+        <html>
+            <nome>index.html</home>
+        </html>
+        <css>
+            <nome>w3.css</home>
+        </css>
+        <imagem>
+            <nome>images/Flag_of_Japan.svg</home>
+            <nome>images/cidade_e_montanha.jpg</home>
+            <nome>images/imagem.jpg</home>
+            <nome>images/paisagem.jpg</home>
+            <nome>images/noite.jpg</home>
+            <nome>images/templo_na_natureza.jpg</home>        
+        </imagem>
+    </resultados>
+</manifesto>
