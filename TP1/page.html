@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Japan</title>
+	<link rel="icon" href="images/Flag_of_Japan.svg">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="w3.css">
+	
+	<style>
+		/* Split the screen in half */
+		.split {
+		  max-width: 50%;
+		  position: relative;
+		  z-index: 1;
+		  overflow-x: hidden;
+		  padding-top: 20px;
+		}
+
+		/* Control the left side */
+		.left {
+		   float: left;
+		}
+
+		/* Control the right side */
+		.right {
+		   margin-left: 50%;
+		}
+
+		.td-text{
+			vertical-align:top;
+		}
+	</style>
+</head>
+<body>
+
+	<div style="max-width: 80%; margin: auto;">
+		<div class="w3-container w3-indigo" style="margin: auto;">
+			<h1><b>Japan appreciation website</b></h1>
+		</div>
+		
+		<div class="w3-container w3-pale-blue">
+			<div class="split left w3-center">
+				<h3><b>Japan Images</b></h3>
+				<table style="margin: auto;">
+					<tr>
+						<td>
+							<input type="button" name="slider" onclick="showImage(getPreviousImage())" value="Previous Image">
+						</td>
+						<td>
+							<input type="button" name="slider" onclick="showImage(getNextImage())" value="Next Image">
+						</td>
+					</tr>
+				</table>
+				<img id="slide" src="images/paisagem.jpg" alt="images/paisagem.jpg" style="max-width: 100%; height: auto;">
+				<input type="hidden" name="currvalue" id="currvalue" value="images/paisagem.jpg">
+				<p id="description"></p>
+			</div>
+
+			<div class="split right w3-center">
+				<h3><b>Japan facts</b></h3>
+				<table class="w3-left-align" style=" vertical-align:top;">
+					<tr>
+						<td class="td-text"><b>Capital</b></td>
+						<td class="td-text">Tokyo</td>
+					</tr>
+					<tr>
+						<td class="td-text"><b>National language</b></td>
+						<td class="td-text">Japanese</td>
+					</tr>
+					<tr>
+						<td class="td-text"><b>Government</b></td>
+						<td class="td-text">Unitary parliamentary constitutional monarchy</td>
+					</tr>
+					<tr>
+						<td class="td-text"><b>Population</b></td>
+						<td class="td-text">125,440,000</td>
+					</tr>
+					<tr>
+						<td class="td-text"><b>Density</b></td>
+						<td class="td-text">332/km&sup2;</td>
+					</tr>
+				</table>
+				<ul>
+					<li>
+						<p>Japan is an island country in East Asia. It's situated in the northwest Pacific Ocean, and is bordered on the west by the Sea of Japan, while extending from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south</p>
+					</li>
+					<li>
+						<p>Japan is the eleventh-most populous country in the world, as well as one of the most densely populated and urbanized</p>
+					</li>
+					<li>
+						<p>The climate of Japan is predominantly temperate but varies greatly from north to south. The northernmost region, Hokkaido, has a humid continental climate with long, cold winters and very warm to cool summers. Precipitation is not heavy, but the islands usually develop deep snowbanks in the winter.</p>
+					</li>
+				</ul>
+			</div>
+
+
+
+
+
+		</div>
+		
+		<div class="w3-container w3-indigo">
+			<p>Made by: José Pedro Costa PG47374</p>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		let listOfImages=[];
+		listOfImages.push({
+			Image: "images/paisagem.jpg",
+  			Description: "Japan has greatviews"});
+		listOfImages.push({
+			Image: "images/imagem.jpg",
+  			Description: "Japan still has ancient traditional villages in the midlle of nature"})
+		listOfImages.push({
+			Image: "images/cidade_e_montanha.jpg",
+  			Description: "Japan has a nice contrast between cities and nature"})
+		listOfImages.push({
+			Image: "images/noite.jpg",
+  			Description: "Japan has lighted and animated streets during the night time"})
+		listOfImages.push({
+			Image: "images/templo_na_natureza.jpg",
+  			Description: "Japan has multiple temples blended with nature"})
+
+
+		function getNextImage(){
+			let a = 0;
+			let curr=document.getElementById("currvalue").value;
+			//console.log(curr);
+
+			for (var i = 0; i < listOfImages.length; i++) {
+				//console.log(listOfImages[i]);
+				if(listOfImages[i].Image==curr){
+					a=i+1;
+				}
+			}
+			//console.log(a)
+			if(a<i)
+				return listOfImages[a];
+			else return listOfImages[0];
+		}
+
+		function getPreviousImage(){
+			let a = 0;
+			let curr=document.getElementById("currvalue").value;
+			//console.log(curr);
+
+			for (var i = 0; i < listOfImages.length; i++) {
+				//console.log(listOfImages[i]);
+				if(listOfImages[i].Image==curr){
+					a=i-1;
+				}
+			}
+			//console.log(a)
+			if(a>=0)
+				return listOfImages[a];
+			else return listOfImages[listOfImages.length-1];
+		}
+
+		function showImage(img) {
+			let newimage=getNextImage();
+			console.log(img);
+			document.getElementById("currvalue").value=img.Image;
+			document.getElementById("slide").src=img.Image;
+			document.getElementById("description").innerHTML=img.Description;
+		}
+
+		showImage(listOfImages[0])
+	</script>
+</body>
+</html>
