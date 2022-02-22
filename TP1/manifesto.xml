@@ -2,28 +2,58 @@
 <doc>
     <meta>
         <titulo>TPC1 - Japan Apreciation Website</titulo>
-        <data>21 de fevereiro de 2022</data>
-        <Autor>
+        <data>2022-02-15</data>
+        <autor>
             <id>PG47374</id>
             <nome>José Pedro Carvalho Costa</nome>
-        </Autor>
+        </autor>
         <uc>
-            <sigla>RPCW</sigla>
+            <sigla>RPCW2022</sigla>
             <nome>Representação e Processamento de Conhecimento na Web</nome>
         </uc>
     </meta>
     <resumo>
-        <p>O resultado deste trabalho é um website sobre o Japão</p>
+        <p>O resultado deste trabalho é um website sobre o Japão.</p>
     	<p>Este website é constituido por uma página HTML, embelezado pelo CSS do W3School e algum CSS feito por mim, assim como algum JavaScript para dinamizar a página, criando um slider bastante primitivo.</p>
+        <p>Página principal: 
+            <xref>
+                <url>index.html</url>
+                <texto>link</texto>
+            </xref>
+        </p>
     </resumo>
     <resultados>
-        <resultado>index.html</resultado>
-        <resultado>w3.css</resultado>
-        <resultado>sliderScript.js</resultado>
-        <resultado>images/Flag_of_Japan.svg</resultado>
-        <resultado>images/cidade_e_montanha.jpg</resultado>
-        <resultado>images/imagem.jpg</resultado>
-        <resultado>images/noite.jpg</resultado>
-        <resultado>images/templo_na_natureza.jpg</resultado>
+        <resultado>
+            <url>index.html</url>
+            <texto>Página web</texto>
+        </resultado>
+        <resultado>
+            <url>w3.css</url>
+            <texto>Stylesheet usada</texto>
+        </resultado>
+        <resultado>
+            <url>sliderScript.js</url>
+            <texto>Javascript para o slider</texto>
+        </resultado>
+        <resultado>
+            <url>images/Flag_of_Japan.svg</url>
+            <texto>Imagem da abndeira do japão</texto>
+        </resultado>
+        <resultado>
+            <url>images/cidade_e_montanha.jpg</url>
+            <texto>Imagem do japão 1</texto>
+        </resultado>
+        <resultado>
+            <url>images/imagem.jpg</url>
+            <texto>Imagem do japão 2</texto>
+        </resultado>
+        <resultado>
+            <url>images/noite.jpg</url>
+            <texto>Imagem do japão 3</texto>
+        </resultado>
+        <resultado>
+            <url>images/templo_na_natureza.jpg</url>
+            <texto>Imagem do japão 4</texto>
+        </resultado>
     </resultados>
 </doc>
