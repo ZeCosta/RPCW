@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifesto>
-    <metadata>
+<doc>
+    <meta>
         <titulo>TPC1 - Japan Apreciation Website</titulo>
         <data>21 de fevereiro de 2022</data>
-        <autor>José Pedro Carvalho Costa</autor>
-        <uc>Representação e Processamento de Conhecimento na Web</uc>
-    </metadata>
+        <Autor>
+            <id>PG47374</id>
+            <nome>José Pedro Carvalho Costa</nome>
+        </Autor>
+        <uc>
+            <sigla>RPCW</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
     <resumo>
-    	Este website é constituido por uma página HTML, embelezado pelo CSS do W3School e algum CSS feito por mim, assim como algum JavaScript para dinamizar a página, criando um slider bastante primitivo.
+    	<p>Este website é constituido por uma página HTML, embelezado pelo CSS do W3School e algum CSS feito por mim, assim como algum JavaScript para dinamizar a página, criando um slider bastante primitivo.</p>
     </resumo>
     <resultados>
-        <html>
-            <nome>index.html</home>
-        </html>
-        <css>
-            <nome>w3.css</home>
-        </css>
-        <javascript>
-            <nome>sliderScript.js</home>
-        </javascript>
-        <imagem>
-            <nome>images/Flag_of_Japan.svg</home>
-            <nome>images/cidade_e_montanha.jpg</home>
-            <nome>images/imagem.jpg</home>
-            <nome>images/paisagem.jpg</home>
-            <nome>images/noite.jpg</home>
-            <nome>images/templo_na_natureza.jpg</home>        
-        </imagem>
+        <resultado>index.html</resultado>
+        <resultado>w3.css</resultado>
+        <resultado>sliderScript.js</resultado>
+        <resultado>images/Flag_of_Japan.svg</resultado>
+        <resultado>images/cidade_e_montanha.jpg</resultado>
+        <resultado>images/imagem.jpg</resultado>
+        <resultado>images/noite.jpg</resultado>
+        <resultado>images/templo_na_natureza.jpg</resultado>
     </resultados>
-</manifesto>
+</doc>
