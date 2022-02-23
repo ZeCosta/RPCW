@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC2 - FileServer</titulo>
+        <data>2022-02-22</data>
+        <autor>
+            <id>PG47374</id>
+            <nome>José Pedro Carvalho Costa</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>FileServer para páginas estáticas HTML criadas a partir do dataset json</p>
+    	<p>Página principal: 
+            <xref>
+                <url>index.html</url>
+                <texto>index</texto>
+            </xref>
+        </p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>index.html</url>
+            <texto>Página web principal com a lista de filmes</texto>
+        </resultado>
+        <resultado>
+            <url>atores.html</url>
+            <texto>Página web com a lista de atores</texto>
+        </resultado>
+        <resultado>
+            <url>fileserver.js</url>
+            <texto>Servidor de ficheiros</texto>
+        </resultado>
+        <resultado>
+            <url>interpreter.py</url>
+            <texto>Interpretador do dataset</texto>
+        </resultado>
+        <resultado>
+            <url>dataset.json</url>
+            <texto>Dataset com os filmes</texto>
+        </resultado>
+    </resultados>
+</doc>
