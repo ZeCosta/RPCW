@@ -8,10 +8,11 @@ index_html="""<html>
     <head>
         <meta charset="UTF-8"/>
         <title>Indice</title>
+        <link rel="stylesheet" href="/w3.css">
     </head>
     <body>
         <h1>Índice dos filmes</h1>
-        <ul>
+        <ul class="w3-ul">
 """
 
 prog = re.compile(r'(\(.*\))|(^\($)|(^\)$)|and')
@@ -30,13 +31,14 @@ for linha in data:
     <head>
         <meta charset="UTF-8"/>
         <title>"""+ linha["title"]+"""</title>
+        <link rel="stylesheet" href="/w3.css">
     </head>
     <body>
 """
     filme_html+="\t\t<h1><b>Nome do filme:</b> "+linha["title"]+"</h1>\n"
     filme_html+="\t\t<h3><b>Ano de lançamento:</b> "+str(linha["year"])+"</h3>\n"
     filme_html+="""        <h3><b>Elenco:</b></h3>
-        <ul>
+        <ul class="w3-ul">
 
 """
     for ator in linha["cast"]:
@@ -51,7 +53,7 @@ for linha in data:
     filme_html+="""\t\t</ul>
 """
     filme_html+="""        <h3><b>Géneros:</b></h3>
-        <ul>
+        <ul class="w3-ul">
 """
     for genero in linha["genres"]:
         filme_html+="\t\t\t<li>"+genero+"</li>\n"
@@ -88,10 +90,11 @@ atores_html="""<html>
     <head>
         <meta charset="UTF-8"/>
         <title>Atores</title>
+        <link rel="stylesheet" href="/w3.css">
     </head>
     <body>
         <h1>Índice dos atores</h1>
-        <ul>
+        <ul class="w3-ul">
 """
 for ator in order3:
     print(order2[ator])
@@ -102,13 +105,14 @@ for ator in order3:
     <head>
         <meta charset="UTF-8"/>
         <title>"""+ linha["title"]+"""</title>
+        <link rel="stylesheet" href="/w3.css">
     </head>
     <body>
 """
     ator_html+="\t\t<h1><b>Nome do ator:</b> "+ator+"</h1>\n"
     ator_html+="\t\t<h3><b>Numero de filmes em que participa:</b> "+str(atores[ator][0])+"</h3>\n"
     ator_html+="""        <h3><b>Filmes onde participa:</b></h3>
-        <ul>
+        <ul class="w3-ul">
 """
     for (fn,li) in atores[ator][2]:
         ator_html+="\t\t\t<li><a href=\""+ li +"\">"+fn+"</a></li>\n"
@@ -128,56 +132,3 @@ atores_html+="""\t\t</ul>
 fileAtores = open("atores.html", "w")
 fileAtores.write(atores_html)
 fileAtores.close()
-
-
-'''
-for linha in data:
-    filename="filmes/f"+str(filmeID)+".html"
-    filme_html="""<html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>"""+ linha["title"]+"""</title>
-    </head>
-    <body>
-"""
-    filme_html+="\t\t<h1><b>Nome do filme:</b> "+linha["title"]+"</h1>\n"
-    filme_html+="\t\t<h3><b>Ano de lançamento:</b> "+str(linha["year"])+"</h3>\n"
-    filme_html+="""        <h3><b>Elenco:</b></h3>
-        <ul>
-
-"""
-    for ator in linha["cast"]:
-        if atorvalido(ator):
-            filme_html+="\t\t\t<li>"+ator+"</li>\n"
-            if ator not in atores:
-                atores[ator]=[0]
-            atores[ator][0]+=1
-            atores[ator].append((linha["title"],link))
-
-    filme_html+="""\t\t</ul>
-"""
-    filme_html+="""        <h3><b>Géneros:</b></h3>
-        <ul>
-"""
-    for genero in linha["genres"]:
-        filme_html+="\t\t\t<li>"+genero+"</li>\n"
-    filme_html+="""\t\t</ul>
-    </body>
-</html>"""
-    
-    filmen = open(filename, "w")
-    filmen.write(filme_html)
-    filmen.close()
-    
-    index_html+="\t\t\t<li><a href=\""+ link +"\">"+linha["title"]+"</a></li>\n"
-    filmeID+=1
- 
-
-index_html+="""\t\t</ul>
-    </body>
-</html>
-"""
-index = open("index.html", "w")
-index.write(index_html)
-index.close()
-'''

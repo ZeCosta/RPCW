@@ -10,6 +10,8 @@ myserver = http.createServer(function (req,res){
     var myurl = url.parse(req.url,true).pathname
     
     file=myurl.substring(1)
+
+
     if(file=="filmes"){
         file="index.html"
     }
@@ -20,6 +22,9 @@ myserver = http.createServer(function (req,res){
         else{
             file+=".html"
         }
+    }
+    if(myurl=="/w3.css"){
+        file="w3.css"
     }
     console.log("ficheiro requirido: "+file)
 
