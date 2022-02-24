@@ -10,22 +10,30 @@ myserver = http.createServer(function (req,res){
     var myurl = url.parse(req.url,true).pathname
     
     file=myurl.substring(1)
+    arrStrings=myurl.split("/")
+    console.log(arrStrings)
 
-
-    if(file=="filmes"){
-        file="index.html"
+    if(arrStrings[1]=="filmes"){
+        if(arrStrings.length==2){
+            file="index.html"
+        }else{
+            file=arrStrings[1]+"/"+arrStrings[2]+".html"
+        }
     }
     else{
-        if(file=="atores"){
-            file="atores.html"
+        if(arrStrings[1]=="atores"){
+            if(arrStrings.length==2){
+                file="atores.html"
+            }else{
+                file=arrStrings[1]+"/"+arrStrings[2]+".html"
+            }
         }
         else{
-            file+=".html"
+            file=arrStrings[1]
         }
     }
-    if(myurl=="/w3.css"){
-        file="w3.css"
-    }
+
+
     console.log("ficheiro requirido: "+file)
 
     fs.readFile(file, function(err, data){

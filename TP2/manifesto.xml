@@ -35,6 +35,10 @@
             <texto>Servidor de ficheiros</texto>
         </resultado>
         <resultado>
+            <url>w3.css</url>
+            <texto>Ficheiro de css do website w3 schools</texto>
+        </resultado>
+        <resultado>
             <url>interpreter.py</url>
             <texto>Interpretador do dataset</texto>
         </resultado>
