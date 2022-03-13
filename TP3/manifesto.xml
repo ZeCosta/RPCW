@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC3 - Website com Api de dados Json-server</titulo>
+        <data>2022-03-15</data>
+        <autor>
+            <id>PG47374</id>
+            <nome>José Pedro Carvalho Costa</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Servidor com páginas html dinâmicas</p>
+    	<p>Página principal: 
+            <xref>
+                <url>http://localhost:4000</url>
+                <texto>Índice</texto>
+            </xref>
+        </p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>db.sjon</url>
+            <texto>Base de dados para o Json-server</texto>
+        </resultado>
+        <resultado>
+            <url>escola.js</url>
+            <texto>Servidor de páginas HTML</texto>
+        </resultado>
+    </resultados>
+</doc>
