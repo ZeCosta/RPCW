@@ -14,6 +14,7 @@
     </meta>
     <resumo>
         <p>Servidor com páginas html dinâmicas</p>
+        <p>Este servidor faz pedidos à API Json-server para obter as informações. O Json-server que tem como base de dados o ficheiro db.json</p>
     	<p>Página principal: 
             <xref>
                 <url>http://localhost:4000</url>
