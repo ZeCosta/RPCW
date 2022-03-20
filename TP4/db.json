@@ -1,0 +1,52 @@
+{
+  "tarefas": [
+    {
+      "id": "cenas",
+      "dateCreated": "2022-12-12",
+      "dateDue": "2022-12-12",
+      "who": "meewww",
+      "what": "cenas coiso e tal",
+      "type": "porfazer"
+    },
+    {
+      "id": "A",
+      "dateCreated": "1111-11-11",
+      "dateDue": "1111-11-11",
+      "who": "12",
+      "what": "12",
+      "type": "porfazer"
+    },
+    {
+      "id": "12",
+      "dateCreated": "1212-12-12",
+      "dateDue": "1212-12-12",
+      "who": "222",
+      "what": "2123",
+      "type": "porfazer"
+    },
+    {
+      "id": "cenass",
+      "dateCreated": "",
+      "dateDue": "2022-12-12",
+      "who": "mee",
+      "what": "cenas coiso e tal",
+      "type": "porfazer"
+    },
+    {
+      "id": "cena",
+      "dateCreated": "",
+      "dateDue": "2022-12-12",
+      "who": "mee",
+      "what": "cenas coiso e tal",
+      "type": "realizada"
+    },
+    {
+      "id": "cen",
+      "dateCreated": "",
+      "dateDue": "2022-12-12",
+      "who": "mee",
+      "what": "cenas coiso e tal",
+      "type": "realizada"
+    }
+  ]
+}

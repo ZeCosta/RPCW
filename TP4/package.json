@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "axios": "^0.26.1",
+    "nodemon": "^2.0.15"
+  },
+  "name": "tp4",
+  "version": "1.0.0",
+  "description": "ToDo task manager",
+  "main": "todo.js",
+  "scripts": {
+    "test": "nodemon todo.js"
+  },
+  "author": "ZeCosta",
+  "license": "ISC"
+}

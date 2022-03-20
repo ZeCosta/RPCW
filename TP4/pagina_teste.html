@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDo Task Manager</title>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="public/favicon.png">
+        <link rel="stylesheet" href="public/w3.css"/>
+    </head>
+    <body>
+        <div class="w3-container w3-teal">
+            <h2>ToDo - As Minhas Tarefas </h2>
+        </div>
+
+        <div class="w3-container">
+            <h4>Adicionar/Alterar Tarefa</h4>
+            <form class="w3-container" action="/tarefas" method="POST">
+                <table>
+                    <tr>
+                        <td><label class="w3-text-teal"><b>Id</b></label></td>
+                        <td><input class="w3-input w3-light-grey" type="text" name="id"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="w3-text-teal"><b>Data Inicio</b></label></td>
+                        <td><input class="w3-input w3-light-grey" type="date" name="dateCreated"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="w3-text-teal"><b>Data Limite</b></label></td>
+                        <td><input class="w3-input w3-light-grey" type="date" name="dateDue"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="w3-text-teal"><b>Quem</b></label></td>
+                        <td><input class="w3-input w3-light-grey" type="text" name="who"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="w3-text-teal"><b>Oque</b></label></td>
+                        <td><input class="w3-input w3-light-grey" type="text" name="what"></td>
+                    </tr>
+                </table>
+                <input type="hidden" name="type" value="porfazer">
+          
+                <input class="w3-btn w3-blue-grey" type="submit" value="Registar"/>
+                <input class="w3-btn w3-blue-grey" type="reset" value="Limpar valores"/> 
+            </form>
+        </div>
+        
+        <div class="w3-container">
+            <h4>Tarefas Por fazer</h4>
+            <ul>
+                <table>
+                    <tr>
+                        <td><li>Cenas</li></td>
+                        <td><a class="w3-green" href="">feito</a></td>
+                        <td><a class="w3-blue-grey" href="">editar</a></td>
+                    </tr>
+                    <tr>
+                        <td><li>a</li></td>
+                        <td><a class="w3-green" href="">feito</a></td>
+                        <td><a class="w3-blue-grey" href="">editar</a></td>
+                    </tr>
+                    <tr>
+                        <td><li>Cenasdasdasdas</li></td>
+                        <td><a class="w3-green" href="">feito</a></td>
+                        <td><a class="w3-blue-grey" href="">editar</a></td>
+                    </tr>
+                </table>
+                <li>Cenas <a class="w3-green" href="">feito</a> <a class="w3-blue-grey" href="">editar</a></li>
+                <li>a <a class="w3-green" href="">feito</a> <a class="w3-blue-grey" href="">editar</a></li>
+                <li>Cenasdasdasdas <a class="w3-green" href="">feito</a> <a class="w3-blue-grey" href="">editar</a></li>
+            </ul>
+        </div>
+
+        <div class="w3-container">
+            <h4>Tarefas feitas</h4>
+            <ul>
+                <li>Cenas <a class="w3-red" href="">eliminar</a></li>
+                <li>Cenas <a class="w3-red" href="">eliminar</a></li>
+                <li>Cenas <a class="w3-red" href="">eliminar</a></li>
+            </ul>
+        </div>
+        
+        
+        <footer class="w3-container w3-teal">
+            <address>Gerado por ToDo::RPCW2022 em ${d}</address>
+        </footer>
+    </body>
+</html>
