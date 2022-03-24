@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Pagina de musicas
+  h2 22 de março de 2022
+  table 
+    tr 
+      th Identificador 
+      th Titulo 
+      th Provincia
+    each m in musicas 
+      tr 
+        td=m.id
+        td
+          a(href="http://localhost:3022/musicas/#{m.id}")=m.tit
+        td
+          a(href="http://localhost:3022/musicas/prov/#{m.prov}")=m.prov

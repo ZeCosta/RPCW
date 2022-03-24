@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 Formulario adição de musicas
+  h2 22 de março de 2022
+  form(action="/musicas", method="post") 
+    table 
+      tr 
+        td prov 
+        td
+          input(type="text", name="prov")
+      tr 
+        td local 
+        td
+          input(type="text", name="local")
+      tr 
+        td tit 
+        td
+          input(type="text", name="tit")
+      tr 
+        td musico 
+        td
+          input(type="text", name="musico")
+    input(type="submit", value="submit")

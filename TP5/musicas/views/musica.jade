@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 Registo da musica #{musica.id}
+  h2 22 de março de 2022
+  p
+    b Id: 
+    span=musica.id
+  p
+    b Titulo:  
+    span=musica.tit
+  p
+    b Musico: 
+    span=musica.musico
+  p
+    b Provincia:  
+    span=musica.prov
+  p
+    b Duracao: 
+    span=musica.duracao
+
+  hr
+  addres
+    a(href="/musicas") Voltar à lista   

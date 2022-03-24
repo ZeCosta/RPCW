@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC5 - Aplicação de listagem e adição de músicas</titulo>
+        <data>2022-03-29</data>
+        <autor>
+            <id>PG47374</id>
+            <nome>José Pedro Carvalho Costa</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Servidor web de Musicas</p>
+        <p>Servidor com estrutura do express-generator</p>
+        <p>Páginas HTML através de templates jade</p>
+        <p>Base de dados com API Json-server, através do ficheiro arq-son-EVO_with-id.json</p>
+    	<p>Página principal: 
+            <xref>
+                <url>http://localhost:3022</url>
+                <texto>Índice</texto>
+            </xref>
+        </p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>arq-son-EVO_with-id.json</url>
+            <texto>Base de dados para o Json-server</texto>
+        </resultado>
+        <resultado>
+            <url>add_id.py</url>
+            <texto>Programa em Python para adicionar ids às entradas</texto>
+        </resultado>
+    </resultados>
+</doc>

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 Pagina da provincia #{provId}
+  h2 22 de março de 2022
+  table 
+    tr 
+      th Identificador 
+      th Titulo 
+      th Local
+    each p in provs 
+      tr 
+        td=p.id
+        td
+          a(href="http://localhost:3022/musicas/#{p.id}")=p.tit
+        td=p.local
