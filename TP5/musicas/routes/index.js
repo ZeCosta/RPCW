@@ -13,7 +13,8 @@ router.get('/musicas', function(req, res, next) {
     .then(response => {
         var lista = response.data
         //console.log(lista[0])
-        res.render('musicas', {title: "musicas", musicas: lista });          //renderizar view
+        var d = new Date().toISOString().substring(0, 16)
+        res.render('musicas', {date:d, title: "musicas", musicas: lista });          //renderizar view
 
     })
     .catch(function(erro){
@@ -24,7 +25,8 @@ router.get('/musicas', function(req, res, next) {
 
 
 router.get('/musicas/inserir', function(req, res, next) {     //:id serve para fazer a captura do id (rota paramétrica)
-  res.render('musicas_form', {});          //renderizar view
+  var d = new Date().toISOString().substring(0, 16)
+  res.render('musicas_form', {date:d});          //renderizar view
 
 });
 
@@ -49,7 +51,8 @@ router.get('/musicas/:id', function(req, res, next) {     //:id serve para fazer
   axios.get("http://localhost:3000/musicas/"+id)
     .then(response => {
         var m = response.data
-        res.render('musica', { musica: m });          //renderizar view
+        var d = new Date().toISOString().substring(0, 16)
+        res.render('musica', {date:d,  musica: m });          //renderizar view
 
     })
     .catch(function(erro){
@@ -64,7 +67,8 @@ router.get('/musicas/prov/:id', function(req, res, next) {     //:id serve para 
   axios.get("http://localhost:3000/musicas?prov="+id)
     .then(response => {
         var lista = response.data
-        res.render('provs', {provId: id, provs: lista });          //renderizar view
+        var d = new Date().toISOString().substring(0, 16)
+        res.render('provs', {date:d, provId: id, provs: lista });          //renderizar view
 
     })
     .catch(function(erro){
