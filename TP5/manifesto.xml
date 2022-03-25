@@ -17,14 +17,18 @@
         <p>Servidor com estrutura do express-generator</p>
         <p>Páginas HTML através de templates jade</p>
         <p>Base de dados com API Json-server, através do ficheiro arq-son-EVO_with-id.json</p>
-    	<p>Página principal: 
+    	<p>
             <xref>
                 <url>http://localhost:3022</url>
-                <texto>Índice</texto>
+                <texto>Página principal</texto>
             </xref>
         </p>
     </resumo>
     <resultados>
+        <resultado>
+            <url>app.js</url>
+            <texto>Servidor que responde aos pedidos do cliente</texto>
+        </resultado>
         <resultado>
             <url>arq-son-EVO_with-id.json</url>
             <texto>Base de dados para o Json-server</texto>
