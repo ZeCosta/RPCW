@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  .w3-container.w3-margin
+    .w3-card-4
+      div(id="display" class="w3-card-4 modal")
+      header.w3-container.w3-teal
+        h3.w3-left Insert File
+        form.w3-container.w3-margin(class='w3-container' method='POST' action='/files' enctype="multipart/form-data")
+            .w3-row.w3-margin-bottom
+                .w3-col.s3
+                    label.w3-text-black Ficheiro
+                .w3-col.s9.w3-border
+                    input.w3-input(type='file' name='myFile')
+            .w3-row.w3-margin-bottom
+                .w3-col.s3
+                    label.w3-text-black Descrição
+                .w3-col.s9.w3-border
+                    input.w3-input(type='text' name='description')
+            .w3-row.w3-margin-bottom
+                .w3-col.s9.w3-border
+                    input.w3-input(type='submit' name='Submit')
+      hr
+      h3 File List
+      if list.length > 0
+        .w3-container 
+          table.w3-table-all
+            tr
+              th Date
+              th File
+              th Size
+              th Type
+              th Description
+              th Options
+            each f in list 
+              tr 
+                td=f.date
+                td=f.name
+                td=f.size
+                td=f.mimetype
+                td=f.description.substring(0,15)
+                  if f.description.length > 15 
+                    span ...
+                td
+                  a(href="/files/see/"+f._id) v 
+                  a(href="/fileStore/"+f.name download target="_blank") d   
+                  a(href="/files/del/"+f._id) x 
+      else
+        .w3-container
+          p There are no files...
+      footer.w3-container.w3-teal
+        address Gerado por fileServer :: #{d}
