@@ -1,0 +1,51 @@
+extends layout
+
+block content
+  header.w3-container.w3-teal
+    h1= title +" "+ classe.codigo
+  table.w3-table
+    tr
+      td 
+        b Nível
+      td=classe.nivel
+    tr 
+      td 
+        b Título
+      td=classe.titulo
+    tr 
+      td 
+        b Descrição
+      td=classe.descricao
+    tr 
+      td 
+        b Status
+      td=classe.status
+    if classe.filhos.length > 0
+      .w3-container 
+      tr 
+        td 
+          b Filhos 
+        td
+          ul
+            each e in classe.filhos
+              li 
+                a(href="/"+e.codigo) #{e.codigo} - #{e.titulo}
+    if classe.nivel == 3
+      tr 
+        td 
+          b Processos Relacionados
+        td 
+          ul 
+            each e in classe.processosRelacionados
+              if e.idRel === "eCruzadoCom" || e.idRel === "eComplementarDe" || e.idRel === "eSuplementoDe" || e.idRel === "eSuplementoPara"
+                li 
+                  a(href="/"+e.codigo) #{e.codigo} - #{e.titulo}
+
+  footer.w3-container.w3-teal
+    address Gerado por clavapp
+    if classe.nivel != 1
+      .w3-container 
+      p 
+        a(href="/"+classe.pai.codigo) Voltar á página Anterior
+    p
+      a(href="/") Voltar á página principal

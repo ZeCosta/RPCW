@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC7 - WebServer com uso da clav-API</titulo>
+        <data>2022-04-19</data>
+        <autor>
+            <id>PG47374</id>
+            <nome>José Pedro Carvalho Costa</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Servidor páginas web com a informação retirada da 
+            <xref>
+                <url>http://clav-api.di.uminho.pt/v2/docs/</url>
+                <texto>clav-API</texto>
+            </xref>
+        </p>
+        <p> Estrutura do webserver criada com express-generator</p>
+        <p>Páginas HTML através de templates pug</p>
+    	<p>
+            <xref>
+                <url>http://localhost:3019</url>
+                <texto>Página principal</texto>
+            </xref>
+        </p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>clavapp</url>
+            <texto>Pasta com os ficheiros para o servidor funcionar</texto>
+        </resultado>
+        <resultado>
+            <url>request_aquecimento.py</url>
+            <texto>Resolução do exercício de aquecimento</texto>
+        </resultado>
+    </resultados>
+</doc>
