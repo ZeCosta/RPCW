@@ -39,7 +39,7 @@ block content
             each e in classe.processosRelacionados
               if e.idRel === "eCruzadoCom" || e.idRel === "eComplementarDe" || e.idRel === "eSuplementoDe" || e.idRel === "eSuplementoPara"
                 li 
-                  a(href="/"+e.codigo) #{e.codigo} - #{e.titulo}
+                  a(href="/"+e.codigo) #{e.codigo} - #{e.titulo} (#{e.idRel})
 
   footer.w3-container.w3-teal
     address Gerado por clavapp
