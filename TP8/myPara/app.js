@@ -7,6 +7,7 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 app.use(cors())
+//app.options('*', cors()) // include before other routes
 
 //Ligação à base de dados
 var mongoose = require('mongoose')
@@ -39,6 +40,7 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.jsonp({error:err});
+  console.log(err)
 });
 
 module.exports = app;
