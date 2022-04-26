@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <meta>
+        <titulo>TPC8 - Página html com referencia a um servidor de dados com base de dados em mongoDB</titulo>
+        <data>2022-04-26</data>
+        <autor>
+            <id>PG47374</id>
+            <nome>José Pedro Carvalho Costa</nome>
+        </autor>
+        <uc>
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo>
+        <p>Página web com recurso a JQuery</p>
+        <p>A página web tem ligação a um servidor de dados em nodejs, ligado, por sua vez, a uma base de dados mongobd</p>
+        <p>Estrutura do webserver criada com express-generator</p>
+    </resumo>
+    <resultados>
+        <resultado>
+            <url>ex8-v2.html</url>
+            <texto>Página web com jquery</texto>
+        </resultado>
+        <resultado>
+            <url>myPara</url>
+            <texto>Pasta com os ficheiros do servidor de dados</texto>
+        </resultado>
+    </resultados>
+</doc>
